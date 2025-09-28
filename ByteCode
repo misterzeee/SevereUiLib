@@ -1,19 +1,6 @@
-×ipairs_GgameGameId PlaceIdJobIdValueFindFirstChildFindFirstChildOfClassFindFirstAncestorOfClassFindFirstDescendantFindFirstAncestorWaitForChild
-GetChildrenGetDescendants DestroyParentName	ClassNameIsAncestorOfIsDescendantOf Players
-LocalPlayer	CharacterUserId
-DisplayNameTeam
-PrimaryPartHealth	MaxHealth Adornee	TextureIdMeshIdTransparencyCFramePosition
-LookVectorUpVector
-RightVectorVelocity
-CanCollide
-FieldOfView
-CameraSubjectViewportSizeXY
-GetService GetPing GetHwidsend_notificationisfileisfolder	delfolder delfilepointer_to_userdatatime	workspace
-CurrentCameratypeoftablexyzvectorcreateWorldToScreenPointZmemoryset_read_strengthget_read_strengthset_write_strengthget_write_strengthstringlowererrorUnsupported type: tostringcryptjsonencodedecode
-FindServiceMouseServiceMouseIconEnabledGetMouseLocationSetMouseLocation
-MouseBehaviorMouseDeltaSensitivitytypepairs VisiblenumbersetmetatableUI Framework Vector2SizeTabs	ActiveTabBodyTitleBar	TitleText
+ttypetablepairs VisiblexnumberysetmetatableUI FrameworkName Vector2PositionSizeTabs	ActiveTabBodyTitleBar	TitleText
 TooltipBody
-TooltipText DrawingnewSquareTextDrawingsTabLeftSections
+TooltipText DrawingnewSquareTextDrawingsTabParentLeftSections
 RightSectionsButtoninsert SectionLeftSideElementsNextElementY
 ScrollableScrollOffsetCanvasHeight OutlineHeaderTitle
 ScrollTrack

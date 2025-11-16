@@ -19,7 +19,7 @@ return zeeUi
 
 ## Features
 
-### 1 Set Theme
+### Set Theme
 
 **You may select a theme from the following**:
 

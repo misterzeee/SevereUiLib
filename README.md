@@ -1,5 +1,9 @@
 # Severe Ui Severe Ui Lib
 
+Ping @_misterzeee in the severe discord for any issues or suggestions.
+
+As seen in https://github.com/misterzeee/cbro
+
 ## Overview
 
 **To load the Ui use the following**:

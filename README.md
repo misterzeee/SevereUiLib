@@ -9,7 +9,7 @@ As seen in https://github.com/misterzeee/cbro
 **To load the Ui use the following**:
 
 ```luau
-bytecode = game:HttpGet("https://github.com/misterzeee/SevereUiLib/raw/refs/heads/main/ByteCode5.lua")
+bytecode = game:HttpGet("https://github.com/misterzeee/SevereUiLib/raw/refs/heads/main/MainByteCode.lua")
 local func = luau.load(bytecode)
 func()
 local UI = zeeUi

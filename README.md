@@ -25,6 +25,23 @@ return zeeUi
 
 - Midnight
 - Emerald
+- NEW Medic
+- NEW Custom
+
+**Custom Example**
+
+```luau
+UI.setTheme({
+    Background = {0,0,0},
+    Panel = {0,0,0},
+    Accent = {0,0,0},
+    Pressed = {0,0,0},
+    Text = {0,0,0},
+    SubText = {0,0,0},
+    TabsBar = {0,0,0},
+    Tooltip = {0,0,0},
+})
+```
 
 **Using Theme Example**:
 

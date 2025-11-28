@@ -154,3 +154,51 @@ quality.OnChanged:Connect(function(value, index) print("Quality:", value, index)
 local multiSelect = tab2:addDropdown({ text = "Body Parts", items = {"Head","Torso","Weener"}, defaultIndices = {1, 2} })
 multiSelect.OnChanged:Connect(function(indices, values) print("Selected indices:", indices, "Selected values:", values) end)
 ```
+
+##Example
+```luau
+bytecode = game:HttpGet("https://github.com/misterzeee/SevereUiLib/raw/refs/heads/main/MainByteCode.lua")
+
+func = luau.load(bytecode)
+func()
+
+
+-- Example
+local UI = zeeUi
+
+UI.setTheme("Midnight")
+
+local win = UI.createWindow({ title = "My Tool" })
+
+local tab1 = win:addTab("Tab1")
+local tab2 = win:addTab("Tab2")
+
+local title = tab1:addText({ text = "Ready" })
+
+local run = tab1:addButton({ text = "Run" })
+run.OnClick:Connect(function()
+    title:setText("Running...")
+end)
+
+local enabled = tab2:addCheckbox({ text = "Enable", default = true })
+enabled.OnChanged:Connect(function(v) print("Enable:", v) end)
+
+local vol = tab2:addSlider({ text = "Volume", min = 0, max = 100, mode = "percent", default = 50 })
+vol.OnChanged:Connect(function(v) print("Volume", v) end)
+
+local speed = tab2:addSlider({ text = "Speed", min = 0, max = 10, mode = "number", default = 3 })
+speed.OnChanged:Connect(function(v) print("Speed", v) end)
+
+local quality = tab2:addDropdown({ text = "Quality", items = {"Low","Medium","High"}, defaultIndex = 2 })
+quality.OnChanged:Connect(function(value, index) print("Quality:", value, index) end)
+
+local multiSelect = tab2:addDropdown({ text = "Body Parts", items = {"Head","Torso","Weener"}, defaultIndices = {1, 2} })
+multiSelect.OnChanged:Connect(function(indices, values) print("Selected indices:", indices, "Selected values:", values) end)
+
+local run2 = tab2:addButton({ text = "Run" })
+run2.OnClick:Connect(function()
+    print("pressed")
+end)
+
+return zeeUi
+```

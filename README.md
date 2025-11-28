@@ -130,3 +130,10 @@ Dropdowns are used for selecting string values from a list.
 local quality = tab2:addDropdown({ text = "Quality", items = {"Low","Medium","High"}, defaultIndex = 2 })
 quality.OnChanged:Connect(function(value, index) print("Quality:", value, index) end)
 ```
+
+**Multi Select Dropdown Example**
+
+```luau
+local multiSelect = tab2:addDropdown({ text = "Body Parts", items = {"Head","Torso","Weener"}, defaultIndices = {1, 2} })
+multiSelect.OnChanged:Connect(function(indices, values) print("Selected indices:", indices, "Selected values:", values) end)
+```

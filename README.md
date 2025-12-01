@@ -6,6 +6,8 @@ As seen in https://github.com/misterzeee/cbro
 
 ## Overview
 
+**TOGGLE KEY IS DELETE**
+
 **To load the Ui use the following**:
 
 ```luau
@@ -155,6 +157,22 @@ local multiSelect = tab2:addDropdown({ text = "Body Parts", items = {"Head","Tor
 multiSelect.OnChanged:Connect(function(indices, values) print("Selected indices:", indices, "Selected values:", values) end)
 ```
 
+### Colour Picker
+
+The colour picker is used to select colours for visuals like chams etc.
+
+**Colour Picker Example**
+
+```luau
+local espColor = tab2:addColorPicker({
+    text = "ESP Color",
+    default = {255, 0, 0},
+})
+espColor.OnChanged:Connect(function(color)
+    print(string.format("ESP Color: R=%d G=%d B=%d", color[1], color[2], color[3]))
+end)
+```
+
 ## Example
 ```luau
 bytecode = game:HttpGet("https://github.com/misterzeee/SevereUiLib/raw/refs/heads/main/MainByteCode.lua")
@@ -194,6 +212,22 @@ quality.OnChanged:Connect(function(value, index) print("Quality:", value, index)
 
 local multiSelect = tab2:addDropdown({ text = "Body Parts", items = {"Head","Torso","Weener"}, defaultIndices = {1, 2} })
 multiSelect.OnChanged:Connect(function(indices, values) print("Selected indices:", indices, "Selected values:", values) end)
+
+local espColor = tab2:addColorPicker({
+    text = "ESP Color",
+    default = {255, 0, 0},
+})
+espColor.OnChanged:Connect(function(color)
+    print(string.format("ESP Color: R=%d G=%d B=%d", color[1], color[2], color[3]))
+end)
+
+local chamsColor = tab2:addColorPicker({
+    text = "Chams Color",
+    default = {0, 255, 0},
+})
+chamsColor.OnChanged:Connect(function(color)
+    print(string.format("Chams Color: R=%d G=%d B=%d", color[1], color[2], color[3]))
+end)
 
 local run2 = tab2:addButton({ text = "Run" })
 run2.OnClick:Connect(function()

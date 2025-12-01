@@ -132,7 +132,7 @@ Sliders are used to set float or integer values like changing a volume or speed.
 ```luau
 local vol = tab2:addSlider({ text = "Volume", min = 0, max = 100, mode = "percent", default = 50 })
 vol.OnChanged:Connect(function(v)
-    print("Volume", v) -- This Example Prints When Chnaged
+    print("Volume", v) -- This Example Prints When Changed
 end)
 ```
 

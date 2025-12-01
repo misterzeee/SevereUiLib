@@ -8,6 +8,12 @@ As seen in https://github.com/misterzeee/cbro
 
 **TOGGLE KEY IS DELETE**
 
+<img width="645" height="425" alt="image" src="https://github.com/user-attachments/assets/7a70b264-f3f6-450e-8eea-3a75d951c16c" />
+
+
+<img width="649" height="488" alt="image" src="https://github.com/user-attachments/assets/4a85f529-cdc6-4128-9094-11b15a69f206" />
+
+
 **To load the Ui use the following**:
 
 ```luau

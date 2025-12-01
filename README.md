@@ -159,7 +159,7 @@ multiSelect.OnChanged:Connect(function(indices, values) print("Selected indices:
 
 ### Colour Picker
 
-The colour picker is used to select colours for visuals like chams etc.
+The colour picker is used to select colours for visuals like chams etc. Also has copy and paste to use the same colour across different colour pickers.
 
 **Colour Picker Example**
 

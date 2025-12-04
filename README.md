@@ -8,6 +8,9 @@ As seen in https://github.com/misterzeee/cbro
 
 **TOGGLE KEY IS DELETE**
 
+<img width="644" height="549" alt="Screenshot 2025-12-04 231946" src="https://github.com/user-attachments/assets/7e57d697-9e93-4014-9e20-2ed801c16f19" />
+
+<img width="641" height="424" alt="Screenshot 2025-12-04 232011" src="https://github.com/user-attachments/assets/b543ea72-c033-4cf8-97ca-25aa7224ba1c" />
 
 **To load the Ui use the following**:
 

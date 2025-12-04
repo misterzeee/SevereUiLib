@@ -218,21 +218,28 @@ local espColor = tab2:addColorPicker({
     text = "ESP Color",
     default = {255, 0, 0},
 })
-espColor.OnChanged:Connect(function(color)
-    print(string.format("ESP Color: R=%d G=%d B=%d", color[1], color[2], color[3]))
+local espColor = tab2:addColorPicker({
+    text = "ESP Color",
+    default = {255, 0, 0},
+})
+espColor.OnChanged:Connect(function(color, opacity)
+    print(string.format("ESP Color: R=%d G=%d B=%d A=%.2f", color[1], color[2], color[3], opacity or 1.0))
 end)
 
 local chamsColor = tab2:addColorPicker({
     text = "Chams Color",
     default = {0, 255, 0},
 })
-chamsColor.OnChanged:Connect(function(color)
-    print(string.format("Chams Color: R=%d G=%d B=%d", color[1], color[2], color[3]))
+chamsColor.OnChanged:Connect(function(color, opacity)
+    print(string.format("Chams Color: R=%d G=%d B=%d A=%.2f", color[1], color[2], color[3], opacity or 1.0))
 end)
 
-local run2 = tab2:addButton({ text = "Run" })
+local run2 = tab2:addButton({ text = "Get Colors" })
 run2.OnClick:Connect(function()
-    print("pressed")
+    local esp = espColor:getColor()
+    local chams = chamsColor:getColor()
+    print(string.format("ESP: R=%d G=%d B=%d A=%.2f", esp[1], esp[2], esp[3], esp[4] or 1.0))
+    print(string.format("Chams: R=%d G=%d B=%d A=%.2f", chams[1], chams[2], chams[3], chams[4] or 1.0))
 end)
 
 return zeeUi

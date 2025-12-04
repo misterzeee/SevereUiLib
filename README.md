@@ -218,10 +218,6 @@ local espColor = tab2:addColorPicker({
     text = "ESP Color",
     default = {255, 0, 0},
 })
-local espColor = tab2:addColorPicker({
-    text = "ESP Color",
-    default = {255, 0, 0},
-})
 espColor.OnChanged:Connect(function(color, opacity)
     print(string.format("ESP Color: R=%d G=%d B=%d A=%.2f", color[1], color[2], color[3], opacity or 1.0))
 end)
